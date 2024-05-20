@@ -15,12 +15,14 @@ import java.io.FileReader;
  * configuración y para escribir el contenido del ticket en un archivo. La ruta
  * del archivo de configuración se encuentra en una ubicación predefinida.
  * 
- * @author 
- * @version 1.0
+ * @author Lucas
+ * @version 1.1
  */
 public class Ficheros {
-	/** Ruta del archivo de configuración. */
-	private static final String RUTA_CONFIGURACION = "C:/Users/User/eclipse-workspace/Entornos_Tienda/conf/confFichero.txt";
+	/** Ruta del archivo de configuración. 
+	 * He cambiado la ruta del archivo por una relativa para que funcione en cualquier entorno 
+	 * */
+	private static final String RUTA_CONFIGURACION = "src/confFichero.txt";
 
 	/**
 	 * Lee la ruta desde el archivo de configuración.
