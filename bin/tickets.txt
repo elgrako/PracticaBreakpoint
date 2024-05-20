@@ -2,12 +2,12 @@
 ------------------------------------------
             TICKET DE COMPRA
 ------------------------------------------
-Producto: Mario Bros
+Producto: Enchanted
 Cantidad: 1
-Precio unitario: 35.11€
-Precio total: 35.11€
+Precio unitario: 21.2€
+Precio total: 21.2€
 
 ------------------------------------------
-TOTAL: 35.11€
+TOTAL: 21.2€
 ------------------------------------------
 
