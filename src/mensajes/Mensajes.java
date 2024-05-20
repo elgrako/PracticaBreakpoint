@@ -11,8 +11,8 @@ import java.util.Scanner;
  * bienvenida, opciones de menú y un mensaje de despedida. Esta clase se centra
  * en la interacción con el usuario.
  * 
- * @author 
- * @version 1.0
+ * @author Lucas
+ * @version 1.2
  */
 public class Mensajes {
 
@@ -31,7 +31,7 @@ public class Mensajes {
 	public static void Opciones_Menu() {
 
 		System.out.println("\nSeleccione que desea realizar:\n\n" + "\t1. Mostrar productos. (Listar productos)\n"
-				+ "\t2. Comprar productos\n" + "\t3. Mostrar caja. (Importe total de la compra actual)\n"
+				+ "\t2. Comprar productos\n" + "\t3. Mostrar el importe total de la compra.\n"
 				+ "\tSALIR --> Pulse cualquier otro número\n");
 	}
 
@@ -41,6 +41,7 @@ public class Mensajes {
 	public static void Mensaje_Fin() {
 
 		System.out.println("---- Gracias por usar este software. ----");
+		System.out.println("-----  Esperamos que vuelva pronto.  -----");
 	}
 
 	/**

@@ -4,7 +4,7 @@
 package data;
 
 /**
- * @author 
+ * @author
  * @version 0.4
  */
 public class Cine extends Productos {

@@ -1,1 +1,1 @@
-path:src/tickets.txt
+ruta:src/tickets.txt

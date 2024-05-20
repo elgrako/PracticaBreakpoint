@@ -21,8 +21,8 @@ import store.Ficheros;
  * Clase que gestiona los productos disponibles en la tienda. Permite cargar
  * productos, mostrarlos, y realizar compras.
  * 
- * @author 
- * @version 1.0
+ * @author Lucas
+ * @version 1.2
  */
 public class GestionProductos {
 
@@ -75,6 +75,10 @@ public class GestionProductos {
 			System.out.println();
 			contador = contador + 1;
 		}
+		System.out.println("Lista de códigos de productos:");
+	    for (Productos productos : catalogo.values()) {
+	        System.out.println(productos.getCodigoBarras());
+	    }
 	}
 
 	/**
@@ -203,5 +207,14 @@ public class GestionProductos {
 		Random random = new Random();
 		return 100000 + random.nextInt(900000);
 	}
+
+	public double calcularImporteTotal() {
+	    double importeTotal = 0.0;
+	    for (Productos producto : catalogo.values()) {
+	        importeTotal += producto.getPrecioUnit() * producto.getCantStock();
+	    }
+	    return importeTotal;
+	}
+
 
 }

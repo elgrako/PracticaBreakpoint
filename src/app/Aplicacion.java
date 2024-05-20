@@ -1,6 +1,3 @@
-/**
- * 
- */
 package app;
 
 import logic.GestionProductos;
@@ -17,8 +14,8 @@ import mensajes.Mensajes;
  * finaliza. Al finalizar la ejecución, se muestra un mensaje de despedida del
  * software.
  *
- * @author 
- * @version 1.0
+ * @author Lucas
+ * @version 1.2
  */
 public class Aplicacion {
 
@@ -44,8 +41,11 @@ public class Aplicacion {
 				gestion.comprarProductos(scanner);
 				break;
 			case 3:
-				// Opción 3
-				break;
+			    // he añadido este metodo para calcular el importeTotal de la compra actual
+			    double importeTotal = gestion.calcularImporteTotal();
+			    System.out.println("Importe total de la compra actual: " + importeTotal + "€");
+			    break;
+
 			default:
 				// Se sale del programa
 				continuar = false;
@@ -57,5 +57,4 @@ public class Aplicacion {
 		scanner.close();
 
 	}
-
 }
