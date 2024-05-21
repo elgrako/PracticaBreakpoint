@@ -42,8 +42,8 @@ public class Aplicacion {
 				break;
 			case 3:
 			    // he añadido este metodo para calcular el importeTotal de la compra actual
-			    double importeTotal = gestion.calcularImporteTotal();
-			    System.out.println("Importe total de la compra actual: " + importeTotal + "€");
+			    double precioTotal = gestion.calcularImporteTotal();
+			    System.out.println("Importe total de la compra actual: " + precioTotal + "€");
 			    break;
 
 			default:
